@@ -1,11 +1,14 @@
--- $$\      $$\  $$$$$$\  $$$$$$$\  $$\   $$\  $$$$$$\   --
--- $$$\    $$$ |$$  __$$\ $$  __$$\ $$ |  $$ |$$  __$$\  --
--- $$$$\  $$$$ |$$ /  \__|$$ |  $$ |\$$\ $$  |$$ /  \__| --
--- $$\$$\$$ $$ |\$$$$$$\  $$$$$$$  | \$$$$  / $$$$$$$\   --
--- $$ \$$$  $$ | \____$$\ $$  __$$<  $$  $$<  $$  __$$\  --
--- $$ |\$  /$$ |$$\   $$ |$$ |  $$ |$$  /\$$\ $$ /  $$ | --
--- $$ | \_/ $$ |\$$$$$$  |$$ |  $$ |$$ /  $$ | $$$$$$  | --
--- \__|     \__| \______/ \__|  \__|\__|  \__| \______/  --
+--[=[
+$$\      $$\  $$$$$$\  $$$$$$$\  $$\   $$\  $$$$$$\  
+$$$\    $$$ |$$  __$$\ $$  __$$\ $$ |  $$ |$$  __$$\ 
+$$$$\  $$$$ |$$ /  \__|$$ |  $$ |\$$\ $$  |$$ /  \__|
+$$\$$\$$ $$ |\$$$$$$\  $$$$$$$  | \$$$$  / $$$$$$$\  
+$$ \$$$  $$ | \____$$\ $$  __$$<  $$  $$<  $$  __$$\ 
+$$ |\$  /$$ |$$\   $$ |$$ |  $$ |$$  /\$$\ $$ /  $$ |
+$$ | \_/ $$ |\$$$$$$  |$$ |  $$ |$$ /  $$ | $$$$$$  |
+\__|     \__| \______/ \__|  \__|\__|  \__| \______/ 
+]=]
+
 
 local G2L = {};
 
@@ -1789,7 +1792,7 @@ local script = G2L["20"];
 	
 			if closestNitty then
 				local underMapCFrame = humanoidRootPart.CFrame + Vector3.new(0, -25, 0)
-				local tweenInfoUnderMap = TweenInfo.new(2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out) 
+				local tweenInfoUnderMap = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out) 
 				local tweenGoalUnderMap = {CFrame = underMapCFrame}
 				local tweenUnderMap = TweenService:Create(humanoidRootPart, tweenInfoUnderMap, tweenGoalUnderMap)
 				tweenUnderMap:Play()
@@ -1797,7 +1800,7 @@ local script = G2L["20"];
 				tweenUnderMap.Completed:Wait()
 	
 				local targetCFrame = closestNitty.HumanoidRootPart.CFrame + Vector3.new(0, 2, 0)
-				local tweenInfoToNitty = TweenInfo.new(30, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+				local tweenInfoToNitty = TweenInfo.new(15, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
 				local tweenGoalToNitty = {CFrame = targetCFrame}
 				local tweenToNitty = TweenService:Create(humanoidRootPart, tweenInfoToNitty, tweenGoalToNitty)
 				tweenToNitty:Play()
